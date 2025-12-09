@@ -1,0 +1,1 @@
+data = "Arya ganteng poll"
