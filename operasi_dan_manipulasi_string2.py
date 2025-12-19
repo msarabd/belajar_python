@@ -77,5 +77,5 @@ tengah = "tengah".center(20,"@") # kalau mau di sebelahnya bukan spasi
 print("'" + tengah + "'") # total karakter sesudah dan sebelum "tengah" ada 10/2 = 5
 
 # kebalikannya -> strip()
-tengah = tengah.strip("@") # untuk menghapus karakter tertentu di kiri dan kanan
+tengah = "tengah@".strip("@") # untuk menghapus karakter tertentu di kiri dan kanan
 print("'" + tengah + "'")

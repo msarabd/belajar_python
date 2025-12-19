@@ -21,27 +21,99 @@ while True:
         while True:
             os.system("cls")
             print(5*"=", "Pertambahan", 5*"=", "\n")
+
             angka_1 = float(input("Masukkan angka pertama = "))
             angka_2 = float(input("Masukkan angka kedua = "))
             hasil = angka_1 + angka_2
-            print(f"Hasil dari {angka_1} ditambah {angka_2} adalah {hasil}")
+            
+            if hasil.is_integer() :
+                print(f"Hasil dari {angka_1} ditambah {angka_2} adalah {int(hasil)}")
+
+            else:
+                print(f"Hasil dari {angka_1} ditambah {angka_2} adalah {round(hasil, 2)}")
+            
             input("\n(Tekan enter untuk kembali)")
             break
 
     elif pilihan_1 == "2":
-        pass
+        while True:
+            os.system("cls")
+            print(5*"=", "Pengurangan", 5*"=", "\n")
+
+            angka_1 = float(input("Masukkan angka pertama = "))
+            angka_2 = float(input("Masukkan angka kedua = "))
+            hasil = angka_1 - angka_2
+            
+            if hasil.is_integer() :
+                print(f"Hasil dari {angka_1} dikurang {angka_2} adalah {int(hasil)}")
+
+            else:
+                print(f"Hasil dari {angka_1} dikurang {angka_2} adalah {round(hasil, 2)}")
+            
+            input("\n(Tekan enter untuk kembali)")
+            break
     
     elif pilihan_1 == "3":
-        pass
+        while True:
+            os.system("cls")
+            print(5*"=", "Perkalian", 5*"=", "\n")
+
+            angka_1 = float(input("Masukkan angka pertama = "))
+            angka_2 = float(input("Masukkan angka kedua = "))
+            hasil = angka_1 * angka_2
+
+            if hasil.is_integer() :
+                print(f"Hasil dari {angka_1} dikali {angka_2} adalah {int(hasil)}")
+
+            else:
+                print(f"Hasil dari {angka_1} dikali {angka_2} adalah {round(hasil, 2)}")
+            
+            input("\n(Tekan enter untuk kembali)")
+            break
     
     elif pilihan_1 == "4":
-        pass
+        while True:
+            os.system("cls")
+            print(5*"=", "Pembagian", 5*"=", "\n")
+
+            angka_1 = float(input("Masukkan angka pertama = "))
+            angka_2 = float(input("Masukkan angka kedua = "))
+            hasil = angka_1 / angka_2
+            
+            if hasil.is_integer() :
+                print(f"Hasil dari {angka_1} dibagi {angka_2} adalah {int(hasil)}")
+
+            else:
+                print(f"Hasil dari {angka_1} dibagi {angka_2} adalah {round(hasil, 2)}")
+
+            input("\n(Tekan enter untuk kembali)")
+            break
     
     elif pilihan_1 == "5":
-        pass
-    
+        while True:
+            os.system("cls")
+            print(5*"=", "Pengurangan", 5*"=", "\n")
+
+            angka_1 = float(input("Masukkan angka pertama = "))
+            angka_2 = float(input("Masukkan angka kedua = "))
+            hasil = angka_1 - angka_2
+            print(f"Hasil dari {angka_1} dikurang {angka_2} adalah {hasil}")
+            input("\n(Tekan enter untuk kembali)")
+            break
+
     elif pilihan_1 == "6":
-        pass
+        while True:
+            os.system("cls")
+            print(5*"=", "Pengurangan", 5*"=", "\n")
+
+            angka_1 = float(input("Masukkan angka pertama = "))
+            angka_2 = float(input("Masukkan angka kedua = "))
+            hasil = angka_1 - angka_2
+            print(f"Hasil dari {angka_1} dikurang {angka_2} adalah {hasil}")
+            input("\n(Tekan enter untuk kembali)")
+            break
 
     else:
         break
+
+    #
