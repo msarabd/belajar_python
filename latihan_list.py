@@ -7,6 +7,7 @@ data_buku = []
 token = False
 while not token:
     try: 
+        os.system("cls")
         judul = input("Masukkakan judul buku = ").strip()
         penulis = input("Masukkan nama penulis = ").strip()
 
@@ -17,7 +18,7 @@ while not token:
             # print(f"\nBuku {i+1}")
             # print(f"Judul = {data[0]}")
             # print(f"Penulis = {data[1]}")
-            print(f"{i+1} | {data[0]} | {data[1]} ")
+            print(f"{i+1} | {data[0]:<17} | {data[1]:<10} ")
 
         pilihan_1 = input("\nIngin lanjut (y/t)? ").strip()
         print()
